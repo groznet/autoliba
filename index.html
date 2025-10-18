@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Autoliba - Магазин автозапчастей</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Arial', sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 40px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            backdrop-filter: blur(10px);
+        }
+        
+        .logo {
+            font-size: 3.5rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #fff;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        .logo span {
+            color: #4CAF50;
+        }
+        
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #fff;
+        }
+        
+        .subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 30px;
+            color: #e0e0e0;
+        }
+        
+        .contact-info {
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 30px 0;
+            border-left: 5px solid #4CAF50;
+        }
+        
+        .phone {
+            font-size: 2rem;
+            font-weight: bold;
+            margin: 15px 0;
+            color: #fff;
+        }
+        
+        .website {
+            font-size: 1.5rem;
+            margin: 15px 0;
+            color: #e0e0e0;
+        }
+        
+        .status {
+            background-color: rgba(76, 175, 80, 0.2);
+            padding: 15px;
+            border-radius: 8px;
+            margin: 20px 0;
+            font-size: 1.2rem;
+            border: 1px solid rgba(76, 175, 80, 0.5);
+        }
+        
+        .features {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        
+        .feature {
+            flex: 1;
+            min-width: 200px;
+            margin: 10px;
+            padding: 15px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+        }
+        
+        .feature i {
+            font-size: 2rem;
+            margin-bottom: 10px;
+            color: #4CAF50;
+        }
+        
+        .countdown {
+            margin: 30px 0;
+            font-size: 1.2rem;
+        }
+        
+        .countdown-numbers {
+            display: flex;
+            justify-content: center;
+            margin-top: 15px;
+        }
+        
+        .countdown-item {
+            margin: 0 10px;
+            background-color: rgba(255, 255, 255, 0.15);
+            padding: 10px 15px;
+            border-radius: 8px;
+            min-width: 70px;
+        }
+        
+        .countdown-number {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+        
+        .social-links {
+            margin-top: 30px;
+        }
+        
+        .social-links a {
+            display: inline-block;
+            margin: 0 10px;
+            color: #fff;
+            font-size: 1.5rem;
+            transition: transform 0.3s;
+        }
+        
+        .social-links a:hover {
+            transform: translateY(-5px);
+        }
+        
+        @media (max-width: 768px) {
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            h1 {
+                font-size: 2rem;
+            }
+            
+            .phone {
+                font-size: 1.5rem;
+            }
+            
+            .website {
+                font-size: 1.2rem;
+            }
+            
+            .features {
+                flex-direction: column;
+            }
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="logo">Auto<span>liba</span></div>
+        <h1>Магазин автозапчастей</h1>
+        <p class="subtitle">Ваш надежный партнер в мире автомобильных запчастей</p>
+        
+        <div class="status">
+            <i class="fas fa-tools"></i>
+            <p>Полная версия сайта будет доступна скоро</p>
+        </div>
+        
+        <div class="contact-info">
+            <h2>Свяжитесь с нами</h2>
+            <div class="phone">
+                <i class="fas fa-phone"></i> +7 989 926-15-11
+            </div>
+            <div class="website">
+                <i class="fas fa-globe"></i> autoliba.ru
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature">
+                <i class="fas fa-cogs"></i>
+                <h3>Широкий ассортимент</h3>
+                <p>Запчасти для всех марок автомобилей</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-shipping-fast"></i>
+                <h3>Быстрая доставка</h3>
+                <p>По всему региону в кратчайшие сроки</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-medal"></i>
+                <h3>Гарантия качества</h3>
+                <p>Только оригинальные и проверенные запчасти</p>
+            </div>
+        </div>
+        
+        <div class="countdown">
+            <p>До запуска полной версии сайта осталось:</p>
+            <div class="countdown-numbers">
+                <div class="countdown-item">
+                    <div class="countdown-number" id="days">30</div>
+                    <div>дней</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="hours">12</div>
+                    <div>часов</div>
+                </div>
+                <div class="countdown-item">
+                    <div class="countdown-number" id="minutes">45</div>
+                    <div>минут</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="social-links">
+            <a href="#"><i class="fab fa-vk"></i></a>
+            <a href="#"><i class="fab fa-telegram"></i></a>
+            <a href="#"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </div>
+
+    <script>
+        // Простой счетчик обратного отсчета (для демонстрации)
+        function updateCountdown() {
+            const days = document.getElementById('days');
+            const hours = document.getElementById('hours');
+            const minutes = document.getElementById('minutes');
+            
+            // Установите дату запуска здесь
+            const launchDate = new Date('2023-12-01').getTime();
+            const now = new Date().getTime();
+            const timeLeft = launchDate - now;
+            
+            if (timeLeft > 0) {
+                const daysLeft = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+                const hoursLeft = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutesLeft = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+                
+                days.textContent = daysLeft;
+                hours.textContent = hoursLeft;
+                minutes.textContent = minutesLeft;
+            } else {
+                days.textContent = 0;
+                hours.textContent = 0;
+                minutes.textContent = 0;
+            }
+        }
+        
+        // Обновляем счетчик каждую минуту
+        updateCountdown();
+        setInterval(updateCountdown, 60000);
+    </script>
+</body>
+</html>
